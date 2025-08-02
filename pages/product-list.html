@@ -1,18 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>產品列表頁</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <%- include("./layout/head"); -%>
+  <title>產品列表頁</title>
+</head>
+<body>
+  <%- include("./layout/nav"); -%>
 
-    <main>我是產品列表頁</main>
+  <div class="container container-product-list">
+    <nav class="mb-24 mb-md-12 breadcrumb">
+      <a class="mr-12 mr-md-8 breadcrumb-link" href="/">首頁</a>
+      <span class="mr-12 mr-md-8">/</span>
+      <a class="mr-12  mr-md-8 breadcrumb-link" href="/">女鞋</a>
+      <span class="mr-12  mr-md-8">/</span>
+      <a href="#">所有商品</a>
+    </nav>
+    <h3 class="mb-24 mb-md-12">所有商品</h3>
+    <main class="row jcsb">
+      <div class="col-2">
+        <ul class="main-menu">
+          <li class="mb-16 main-menu-item"><a href="#">所有商品</a></li>
+          <li class="mb-16 main-menu-item"><a href="#">慢跑鞋</a></li>
+          <li class="mb-16 main-menu-item"><a href="#">滑板鞋</a></li>
+          <li class="mb-16 main-menu-item"><a href="#">厚底鞋</a></li>
+          <li class="main-menu-item"><a href="#">限定<span>/</span>聯名企劃</a></li>
+        </ul>
+      </div>
+      <div class="col-10">
+        <section class="content">
+          <ul class="d-flex product-list">
+            <li class="col-4 col-md-6">
+                <div class="mb-48 mb-md-24 product-list-card">
+                  <a href="#">
+                    <img class="mb-12" src="../assets/images/desktop/product.png" alt="product-image">
+                    <h6 class="mb-4">PLATFORM 404</h6>
+                    <p>NT$2,600</p>
+                  </a>
+                </div>
+            </li>
+            <li class="col-4 col-md-6">
+              <div class="mb-48 mb-md-24 product-list-card">
+                <a href="#">
+                  <img class="mb-12" src="../assets/images/desktop/product-1.png" alt="product-image">
+                  <h6 class="mb-4">PLATFORM 404</h6>
+                  <p>NT$2,600</p>
+                </a>
+              </div>
+            </li>
+            <li class="col-4 col-md-6">
+              <div class="mb-48 mb-md-24 product-list-card">
+                <a href="#">
+                  <img class="mb-12" src="../assets/images/desktop/product-2.png" alt="product-image">
+                  <h6 class="mb-4">VM001</h6>
+                  <p>NT$2,600</p>
+                </a>
+              </div>
+            </li>
+            <li class="col-4 col-md-6">
+              <div class="mb-48 mb-md-24 product-list-card">
+                <a href="#">
+                  <img class="mb-12" src="../assets/images/desktop/product-3.png" alt="product-image">
+                  <h6 class="mb-4">Melty Kiss</h6>
+                  <p>NT$4,000</p>
+                </a>
+              </div>
+            </li>
+            <li class="col-4 col-md-6">
+              <div class="mb-48 mb-md-24 product-list-card">
+                <a href="#">
+                  <img class="mb-12" src="../assets/images/desktop/product-4.png" alt="product-image">
+                  <h6 class="mb-4">BOOMBLOK</h6>
+                  <p>NT$3,200</p>
+                </a>
+              </div>
+            </li>
+            <li class="col-4 col-md-6">
+              <div class="mb-48 mb-md-24 product-list-card">
+                <a href="#">
+                  <img class="mb-12" src="../assets/images/desktop/product-5.png" alt="product-image">
+                  <h6 class="mb-4">BOOMBLOK</h6>
+                  <p>NT$3,200</p>
+                </a>
+              </div>
+            </li>
+            <li class="col-4 col-md-6">
+              <div class="mb-48 mb-md-24 product-list-card">
+                <a href="#">
+                  <img class="mb-12" src="../assets/images/desktop/product-6.png" alt="product-image">
+                  <h6 class="mb-4">R:UNER</h6>
+                  <p>NT$4,000</p>
+                </a>
+              </div>
+            </li>
+            <li class="col-4 col-md-6">
+              <div class="mb-48 mb-md-24 product-list-card">
+                <a href="#">
+                  <img class="mb-12" src="../assets/images/desktop/product-7.png" alt="product-image">
+                  <h6 class="mb-4">Sugar Snap</h6>
+                  <p>NT$4,000</p>
+                </a>
+              </div>
+            </li>
+            <li class="col-4 col-md-6">
+              <div class="mb-48 mb-md-24 product-list-card">
+                <a href="#">
+                  <img class="mb-12" src="../assets/images/desktop/product-8.png" alt="product-image">
+                  <h6 class="mb-4">Neofoam</h6>
+                  <p>NT$4,000</p>
+                </a>
+              </div>
+            </li>
+            <li class="shoes-10th col-4 col-md-6">
+              <div class="mb-48 mb-md-24 product-list-card">
+                <a href="#">
+                  <img class="mb-12" src="../assets/images/desktop/product-9.png" alt="product-image">
+                  <h6 class="mb-4">Neofoam</h6>
+                  <p>NT$4,000</p>
+                </a>
+              </div>
+            </li>
+          </ul>
+          <ul class="mb-80 d-flex jcc aic pagination">
+            <li class="mr-12 pagination-chevron"><a href="#"><i class="bi bi-chevron-left"></i></a></li>
+            <li class="mr-8 pagination-page"><a href="#">1</a></li>
+            <li class="mr-8 pagination-page"><a href="#">2</a></li>
+            <li class="mr-8 pagination-page"><a href="#">3</a></li>
+            <li class="mr-8 pagination-more-pages"><a href="#">...</a></li>
+            <li class="mr-12 pagination-page"><a href="#">10</a></li>
+            <li class="pagination-chevron"><a href="#"><i class="bi bi-chevron-right"></i></a></li>
+          </ul>
+      </section>
+    </div>
+  </main>
+  </div>
 
-    <%- include('./layout/footer'); -%>
+  <%- include("./layout/cta"); -%>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+  <%- include("./layout/footer"); -%>
+
+  <script type="module" src="../main.js"></script>
+</body>
 </html>

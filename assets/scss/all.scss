@@ -1,5 +1,16 @@
-@import './layout/header.scss';
-@import './layout/footer.scss';
+// 元件設定
+@import './helper/variables';
+@import './base/reset';
+@import './base/base';
+@import './components/button';
 
+// 區塊設定
+@import './layout/nav';
+@import './layout/cta';
+@import './layout/footer';
 
-@import './pages/index.scss';
+// 頁面設定
+@import './pages/index';
+@import './pages/product-list';
+@import './pages/product-detail';
+@import './pages/brand-intro';

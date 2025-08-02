@@ -1,0 +1,95 @@
+.container-brand-intro{
+    padding-left: 110px;
+    padding-right: 110px;
+}
+@media(max-width: 768px){
+    .container-brand-intro{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+.hero-section{
+    color: #fff;
+    background-image: url(../images/desktop/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 151px 0;
+}
+
+@media(max-width:768px){
+    .hero-section{
+        width: 100%;
+        background-image: url(../images/mobile/hero-s.png);
+        padding: 87px 0;
+    }
+    .hero-section h1{
+        font-size: 28px;
+    }
+    .hero-section h3{
+        font-size: 20px;
+    }
+}
+
+.highlight-section{
+    background-color: $primary-100;
+    text-align: center;
+    padding: 32px 0;
+}
+.highlight-section h5{
+    color: $primary-400;
+}
+.highlight-section p{
+    color: $neutral-900;
+}
+
+@media(max-width: 768px){
+    .highlight-section{
+        padding: 24px 0;
+}
+}
+
+.main-img{
+    margin-left: -110px;
+    margin-right: -110px;
+}
+.main-img img{
+    max-width: 1076px;
+    width: 100%;
+    height: auto;
+}
+
+@media(max-width: 768px){
+    .main-img{
+        margin-left: 0;
+        margin-right: 0;
+}
+}
+
+.brand-intro-section h5{
+    color: $primary-400;
+}
+
+.brand-timeline-section ol{
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.brand-story-section ul li a{
+    display: block;
+    color: $primary-400;
+    text-decoration: none;
+}
+.brand-story-section ul li a:hover{
+    color: $warning-300;
+}
+.brand-story-section ul li a i{
+    font-size: 20px;
+}
+.brand-story-section ul li a i,
+.brand-story-section ul li a span{
+    display: inline-block;
+    vertical-align: middle;
+}

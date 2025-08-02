@@ -1,18 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>i產品詳情頁</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <%- include("./layout/head"); -%>
+  <title>產品詳情頁</title>
+</head>
+<body>
+  <%- include("./layout/nav"); -%>
 
-    <main>我是產品詳情頁</main>
+  <div class="container container-product-detail">
+    <main class="mb-112 mb-md-40 row">
+      <div class="mb-md-24 col-7">
+        <ul class="d-flex gap-8 gap-md-0 product-detail-images">
+          <li class="image-display"><img src="../assets/images/desktop/image.png" alt="shoes-detail-image"></li>
+          <li><img src="../assets/images/desktop/image-1.png" alt="shoes-detail-image"></li>
+          <li><img src="../assets/images/desktop/image-2.png" alt="shoes-detail-image"></li>
+          <li><img src="../assets/images/desktop/image-3.png" alt="shoes-detail-image"></li>
+          <li><img src="../assets/images/desktop/image-4.png" alt="shoes-detail-image"></li>
+          <li><img src="../assets/images/desktop/image-5.png" alt="shoes-detail-image"></li>
+          <li><img src="../assets/images/desktop/image-6.png" alt="shoes-detail-image"></li>
+          <li><img src="../assets/images/desktop/image-7.png" alt="shoes-detail-image"></li>
+        </ul>
+      </div>
+      <div class="col-5">
+        <section class="content">
+          <nav class="mb-12 mb-md-8 breadcrumb">
+            <a class="mr-12 mr-md-8 breadcrumb-link" href="/">首頁</a>
+            <span class="mr-12 mr-md-8">/</span>
+            <a class="mr-12 mr-md-8 breadcrumb-link" href="#">女鞋</a>
+            <span class="mr-12 mr-md-8">/</span>
+            <a class="mr-12 mr-md-8 breadcrumb-link" href="#">滑板鞋</a>
+            <span class="mr-12 mr-md-8">/</span>
+            <a href="#">Platform 404</a>
+          </nav>
+          <h2 class="mb-16 mb-md-12">Platform 404</h2>
+          <h5 class="mb-16 mb-md-12 d-flex aic">NT$2,600<span class="original-price">NT$3,200</span></h5>
+          <p class="mb-12">Platform 404 以柔和奶白為底，搭配深藍色皮革點綴，走在街上自帶回頭率。鞋型採用復古運動風輪廓，結合輕量厚底與柔軟泡棉鞋舌，兼顧美感與舒適。</p>
+          <p class="mb-32">鞋身選用柔軟皮革材質，打造出清新卻不失個性的氛圍，並以鞋面透氣孔設計提升穿著體驗，兼顧質感與舒適度，適合日常長時間著用。無論是街頭穿搭、日常通勤或週末出遊都能輕鬆駕馭。</p>
+          <section class="mb-32 mb-md-24 color-section">
+            <p class="mb-8">顏色</p>
+            <ul class="d-flex color-wrap">
+              <li class="mr-8 color-card">
+                <img src="../assets/images/desktop/product.png" alt="shoes-image">
+                <p>藍色</p>
+              </li>
+              <li class="color-card">
+                <img src="../assets/images/desktop/product-1.png" alt="shoes-image">
+                <p>卡其色</p>
+              </li>
+            </ul>
+          </section>
+          <section class="mb-48 mb-md-24 size-section">
+              <p class="mb-8">尺寸</p>
+              <ul class="mb-8 d-flex size-wrap">
+                <li class="mr-8 mb-8 size-option">35(22.5cm)</li>
+                <li class="mr-8 mb-8 size-option">36(23.0cm)</li>
+                <li class="mr-8 mb-8 size-option">37(23.5cm)</li>
+                <li class="mr-8 mb-8 size-option">38(24.0cm)</li>
+                <li class="mr-8 mb-8 size-option">39(24.5cm)</li>
+                <li class="mr-8 mb-8 size-option">40(25.0cm)</li>
+                <li class="mr-8 size-option">41(26.0cm)</li>
+                <li class="mr-8 disabled size-option">42(26.5cm)</li>
+                <li class="mr-8 disabled size-option">43(27.0cm)</li>
+              </ul>
+              <p class="alert-text">僅剩 3 雙</p>
+              <div class="product-actions"></div>
+            </section>
+            <section class="mb-32 d-flex product-actions">
+              <button class="mr-8 btn-large btn-wishlist"><i class="mr-8 mr-md-0 icon-heart"></i><span>加入收藏</span></button>
+              <button class="mr-md-8 btn-large btn-primary"><i class="mr-8 bi bi-handbag"></i>門市預約試穿</button>
+            </section>
+            <section class="product-description">
+              <div class="product-description-wrap">
+                <p class="mb-4 description-title">商品材質</p>
+                <ul class="description-text">
+                  <li>鞋面：合成皮革（Synthetic Leather）</li>
+                  <li>內裡：透氣網布材質，提升舒適與排汗性</li>
+                  <li>鞋底：EVA 輕量發泡橡膠，具備良好緩震與止滑效果</li>
+                  <li>鞋帶：聚酯纖維，耐拉扯不易鬆脫</li>
+                </ul>
+              </div>
+              <div class="product-description-wrap">
+                <p class="mb-4 description-title">購買須知</p>
+                <p class="description-text">商品顏色因螢幕顯示可能略有差異，請以實品為準。</p>
+                <p class="description-text">建議首次穿著前試穿確認尺寸，避免影響退換貨權益。</p>
+                <p class="description-text">本商品為限量發售，庫存有限，如需更換尺寸請儘早聯繫客服協助處理。</p>
+              </div>
+              <div class="product-description-wrap">
+                <p class="mb-4 description-title">保養方式</p>
+                <p class="description-text">建議以乾布或微濕軟布擦拭表面汙漬，避免機洗或長時間浸水。</p>
+                <p class="description-text">收納時請放置於乾燥通風處，避免日曬及高溫導致變形或龜裂。</p>
+                <p class="description-text">若需深層清潔，建議使用中性清潔劑並搭配柔刷輕刷，勿使用漂白水或強酸強鹼清潔劑。</p>
+              </div>
+            </section>
+        </section>
+      </div>
+    </main>
+  <aside class="mb-88 mb-md-64 product-recommendation">
+      <h4 class="mb-16">你可能也喜歡...</h4>
+      <div class="swiper">
+          <ul class="d-flex swiper-wrapper">
+              <li class="swiper-slide"><a href="#">
+                  <img class="mb-12" src="../assets/images/desktop/product-2.png" alt="shoes-image">
+                  <h6 class="mb-4">VM001</h6>
+                  <p>NT$2,600</p>
+              </a></li>
+              <li class="swiper-slide"><a href="#">
+                  <img class="mb-12" src="../assets/images/desktop/product-3.png" alt="shoes-image">
+                  <h6 class="mb-4">Melty Kiss</h6>
+                  <p>NT$4,000</p>
+              </a></li>
+              <li class="swiper-slide"><a href="#">
+                  <img class="mb-12" src="../assets/images/desktop/product-4.png" alt="shoes-image">
+                  <h6 class="mb-4">BOOMBLOK</h6>
+                  <p>NT$3,200</p>
+              </a></li>
+              <li class="swiper-slide"><a href="#">
+                  <img class="mb-12" src="../assets/images/desktop/product-7.png" alt="shoes-image">
+                  <h6 class="mb-4">Sugar Snap</h6>
+                  <p>NT$3,200</p>
+              </a></li>
+          </ul>
+          <div class="swiper-button-prev"><i class="bi bi-chevron-left"></i></div>
+          <div class="swiper-button-next"><i class="bi bi-chevron-right"></i></div>
+      </div>
+    </aside>
+  </div>
 
-    <%- include('./layout/footer'); -%>
+  <%- include("./layout/cta"); -%>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+  <%- include("./layout/footer"); -%>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="../assets/js/all.js"></script>
+  <script type="module" src="../main.js"></script>
+</body>
 </html>
