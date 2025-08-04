@@ -1,0 +1,27 @@
+.container .breadcrumb a{
+    display: inline-block;
+    text-decoration: none;
+    color: $neutral-600;
+    font-weight: 500;
+}
+.container .breadcrumb a:hover{
+    color: $primary-400;
+}
+.container .breadcrumb .breadcrumb-link{
+    color: $neutral-600;
+}
+.container .breadcrumb span{
+    display: inline-block;
+    color: $neutral-300;
+}
+.container .breadcrumb p{
+    display: inline-block;
+    color: $neutral-900;
+    font-weight: 500;
+}
+
+@media(max-width: 767px){
+    .container .breadcrumb a{
+        font-size: 14px;
+    }
+}

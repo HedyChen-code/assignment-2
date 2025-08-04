@@ -27,7 +27,7 @@
 .container-product-detail main .product-detail-images li img{
     width: 100%;
 }
-@media(max-width: 768px){
+@media(max-width: 767px){
     .container-product-detail main .product-detail-images li{
         display: none;
         width: 100%;
@@ -46,25 +46,15 @@
     color: $neutral-900;
     font-weight: 500;
 }
-.container-product-detail main .content .breadcrumb .breadcrumb-link{
-    color: $neutral-600;
-}
-.container-product-detail main .content .breadcrumb span{
-    color: $neutral-300;
-}
-
-.container-product-detail main .content h5 .original-price{
+.container-product-detail h5 .original-price{
     font-size: 14px;
     font-weight: 400;
     color: $neutral-500;
     text-decoration: line-through;
     padding-left: 8px;
 }
-@media (max-width: 768px){
-    .container-product-detail main .content .breadcrumb{
-        font-size: 14px;
-    }
-    .container-product-detail main .content h2{
+@media (max-width: 767px){
+    .container-product-detail h2{
         font-size: 24px;
     }
 }
@@ -158,7 +148,7 @@
     vertical-align: middle;
 }
 
-@media(max-width: 768px){
+@media(max-width: px){
     .container-product-detail main .content .product-actions{
         flex-direction: row-reverse;
         justify-content: center;
@@ -245,7 +235,7 @@
     background-color: #cccccc;
 }
 
-@media(max-width: 768px){
+@media(max-width: 767px){
     /* 輪播 */
     /* .container-product-detail .product-recommendation .swiper-wrapper .swiper-slide img{
     width: 300px;

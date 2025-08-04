@@ -1,0 +1,240 @@
+// 通用樣式
+.container{
+    max-width:1320px;
+    margin: 0 auto;
+}
+.m0-auto{
+    margin: 0 auto;
+}
+// 文字標籤
+.display-1{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.display-2{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+// row and flex
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.d-flex{
+    display: flex;
+}
+.jcc{
+    justify-content: center;
+}
+.jcsb{
+    justify-content: space-between;
+}
+.jce{
+    justify-content: flex-end;
+}
+.aic{
+    align-items: center;
+}
+// col-
+.col-2{
+    width: 196px;
+}
+.col-4{
+    width: 33.33333%
+}
+.col-5{
+    width: 41.66666%;
+}
+.col-6{
+    width: 50%;
+}
+.col-7{
+    width: 58.33333%;
+}
+.col-8{
+    width: 66.66666%;
+}
+.col-10{
+    width: 83.333%;
+}
+.col-12{
+    width: 100%;
+}
+
+@media(max-width: 767px){
+    [class*="col-"]{
+        width: 100%;
+    }
+    .col-md-2{
+        width: 50%;
+    }
+    .col-md-6{
+        width: 50%;
+    }
+}
+// gutter
+.p-32{
+    padding: 32px;
+}
+.pl-8{
+    padding-left: 8px;
+}
+.pl-12{
+    padding-left: 12px;
+}
+.pl-110{
+    padding-left: 11px;
+}
+.pr-110{
+    padding-right: 110px;
+}
+.pb-4{
+    padding-bottom: 4px;
+}
+.pb-48{
+    padding-bottom: 48px;
+}
+.mr-auto{
+    margin-right: auto;
+}
+.mr-8{
+    margin-right: 8px;
+}
+.mr-12{
+    margin-right: 12px;
+}
+.mr-24{
+    margin-right: 24px;
+}
+.mr-36{
+    margin-right: 36px;
+}
+.mr-40{
+    margin-right: 40px;
+}
+.mr-48{
+    margin-right: 48px;
+}
+
+.mb-4{
+    margin-bottom: 4px;
+}
+.mb-8{
+    margin-bottom: 8px;
+}
+.mb-12{
+    margin-bottom: 12px;
+}
+.mb-16{
+    margin-bottom: 16px;
+}
+.mb-24{
+    margin-bottom: 24px;
+}
+.mb-32{
+    margin-bottom: 32px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+.mb-48{
+    margin-bottom: 48px;
+}
+.mb-64{
+    margin-bottom: 64px;
+}
+.mb-80{
+    margin-bottom: 80px;
+}
+.mb-84{
+    margin-bottom: 84px;
+}
+.mb-88{
+    margin-bottom: 88px;
+}
+.mb-112{
+    margin-bottom: 112px;
+}
+
+.py-48{
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+.py-64{
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+.gap-8{
+    gap: 8px;
+}
+@media(max-width: 767px){
+    .pb-md-32{
+        padding-bottom: 32px;
+    }
+    .mb-md-0{
+        margin-bottom: 0;
+    }
+    .mb-md-8{
+        margin-bottom: 8px;
+    }
+    .mb-md-12{
+        margin-bottom: 12px;
+    }
+    .mb-md-16{
+        margin-bottom: 16px;
+    }
+    .mb-md-24{
+        margin-bottom: 24px;
+    }
+    .mb-md-32{
+        margin-bottom: 32px;
+    }
+    .mb-md-40{
+        margin-bottom: 40px;
+    }
+    .mb-md-64{
+        margin-bottom: 64px;
+    }
+    .mr-md-0{
+        margin-right: 0;
+    }
+    .mr-md-8{
+        margin-right: 8px;
+    }
+    .py-md-24{
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+    .py-md-40{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .gap-md-0{
+        gap: 0;
+    }
+}
+// border 
+.radius-sm{
+    border-radius: 4px;
+}
+.radius-md{
+    border-radius: 12px;
+}
+.radius-rounded{
+    border-radius: 1000px;
+}
+
+.bd-left-1{
+    border-left: 1px solid $neutral-900;
+}
+.bd-left-3{
+    border-left: 3px solid $neutral-300;
+}
+.bd-bottom-1{
+    border-bottom: 1px solid $primary-400;
+}
+.bd-bottom-1-section{
+    border-bottom: 1px solid $neutral-300;
+}

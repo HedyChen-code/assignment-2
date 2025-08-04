@@ -7,28 +7,6 @@
 .container-product-list a{
     display: block;
 }
-.container-product-list .breadcrumb a{
-    display: inline-block;
-    text-decoration: none;
-    color: $neutral-900;
-    font-weight: 500;
-}
-.container-product-list .breadcrumb a:hover{
-    color: $primary-400;
-}
-.container-product-list .breadcrumb .breadcrumb-link{
-    color: $neutral-600;
-}
-.container-product-list .breadcrumb span{
-    display: inline-block;
-    color: $neutral-300;
-}
-
-@media(max-width: 768px){
-    .container-product-list .breadcrumb a{
-        font-size: 14px;
-    }
-}
 
 .container-product-list main .col-2{
     width: 196px;
@@ -43,7 +21,7 @@
     color: $primary-400;
 }
 
-@media(max-width: 768px){
+@media(max-width: 767px){
     .container-product-list main .col-2{
     display: none;
     }
@@ -76,7 +54,7 @@
 }
 
 
-@media(max-width: 768px){
+@media(max-width: 767px){
     .container-product-list main .content .product-list-card a img{
         min-width: 169.5px;
         min-height: 169.5px;

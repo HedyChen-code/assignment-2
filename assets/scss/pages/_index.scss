@@ -1,3 +1,289 @@
-.index-title {
-  font-size: 100px;
+.container-index{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.nav-link{
+    display: none;
+}
+@media(max-width: 767px){
+    .nav-link{
+        display: flex;
+    }
+    .nav-link a{
+        display: block;
+        width: 50%;
+        font-weight: 500;
+        background-color: $primary-100;
+        padding: 12px 0;
+        text-align: center;
+        &:hover{
+            background-color: $primary-200;
+        }
+    }
+
+}
+
+.banner-cta{
+    background-image: url(/assets/images/desktop/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding-top: 289px;
+    padding-bottom: 288px;
+    padding-left: 200px;
+}
+.banner-cta a{
+    display: block;
+}
+.container-index .btn-large{
+    width: fit-content;
+    background-color: $primary-300;
+    color: $neutral-900;
+}
+@media(max-width: 767px){
+    .banner-cta{
+        background-image: url(/assets/images/mobile/banner-sm.png);
+        padding-top: 155px;
+        padding-bottom: 155px;
+        padding-left: 24px;
+    }
+    .banner-cta .display-2{
+        font-size: 48px;
+    }
+    .banner-cta .h3{
+        font-size: 20px;
+    }
+}
+.container-index main{
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.container-index main .new-arrival .display-2, .container-index main .new-arrival h2{
+    text-align: center;
+}
+.container-index .product-card-wrap{
+    flex-wrap: wrap;
+}
+.container-index .product-card-wrap li{
+    width: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.container-index .product-card-wrap li a{
+    color: $neutral-900;
+    text-decoration: none;
+}
+.container-index .product-card-wrap .product-card img{
+    width: 100%;
+}
+@media(max-width: 767px){
+    .container-index main{
+    margin-left: -6px;
+    margin-right: -6px;
+}
+    .container-index main .new-arrival .display-2{
+        font-size: 32px;
+    }
+    container-index main .new-arrival h2{
+        font-size: 24px;
+    }
+    .container-index .product-card-wrap li{
+    padding-left: 6px;
+    padding-right: 6px;
+}
+}
+
+.container-index .tag-product-card-wrap li{
+    width: 25%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.container-index .best-sell .img-container{
+    position: relative;
+}
+.container-index .best-sell img{
+    width: 100%;
+}
+.container-index .best-sell .img-container span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    font-size: 14px;
+    color: $primary-400;
+    background-color: $primary-100;
+    padding: 8px 12px;
+}
+@media(max-width: 767px){
+    .best-sell h2{
+        font-size: 24px;
+    }
+    .tag-product-card-wrap{
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+    .tag-product-card{
+        min-width: 316px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+.banner-co{
+    background-image: url(/assets/images/desktop/banner-co-branded.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    
+    .star-img{
+        position: absolute;
+        top: 68px;
+        left: calc(50% - 397px);
+        width: 48px;
+    }
+    .sparkle-img{
+        position: absolute;
+        bottom: 132px;
+        right: calc(50% + 357px);
+        width: 76px;
+    }
+}
+.banner-co .display-2{
+    color: $neutral-0;
+
+    span{
+        display: block;
+        letter-spacing: 0.05em;
+    }
+    span.primary-300{
+        color: $primary-300;
+        font-size: 40px;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+}
+.banner-co h2{
+    color: $neutral-0;
+}
+.banner-co .subtitle span{
+    display: block;
+    color: $neutral-500;
+    font-size: 20px;
+}
+.banner-co .btn-large{
+    background-color: $primary-300;
+    color: $neutral-900;
+}
+@media(max-width: 767px){
+    .banner-co-container{
+        overflow: hidden
+    }
+    .banner-co{
+        padding-top: 64px;
+        padding-bottom: 64px;
+        .star-img{
+            position: absolute;
+            top: 32px;
+            left: -20px;
+        }
+        .sparkle-img{
+            position: absolute;
+            bottom: 104px;
+            right: -28px;
+        }
+    }
+    .banner-co .display-2{
+        flex-direction: column;
+        font-size: 32px;
+    }
+    span.primary-300{
+        font-size: 28px;
+    }
+    .banner-co h2{
+        font-size: 20px;
+    }
+    .banner-co .subtitle{
+        flex-direction: column;
+        font-size: 16px;
+        .md-none{
+            display: none;
+        }
+    }
+}
+.series ul .square-product-card{
+    width: 25%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.series ul .square-product-card img{
+    width: 100%;
+}
+.series .img-container{
+    position: relative;
+
+    .tag{
+        position: absolute;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        color: $neutral-0;
+        background-color: rgba(#000, 0.4);
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+}
+@media(max-width: 767px){
+    .series h2{
+        font-size: 24px;
+    }
+    .series ul{
+        flex-wrap: wrap;
+    }
+    .series ul .square-product-card{
+    width: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
+    }
+    .series .img-container .tag{
+        font-size: 16px;
+    }
+}
+.gallery .row{
+    margin: -4px;
+}
+.gallery .row .col-4{
+    flex-wrap: wrap;
+    
+}
+.gallery .row .col-6,.gallery .row .col-12{
+    padding: 4px;
+}
+.gallery img{
+    width: 100%;
+}
+@media(max-width: 767px){
+    .gallery .row{
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        margin: 0 -8px;
+        img{
+            min-width: 300px;
+        }
+    }
+    .gallery .col-4,.gallery .col-6,.gallery .col-12{
+        width: unset;
+        padding: 0 8px;
+    }
+    .gallery .row .col-4{
+        flex-wrap: nowrap;
+    }
 }
