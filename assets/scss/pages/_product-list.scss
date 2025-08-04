@@ -16,10 +16,14 @@
     color: $neutral-900;
     text-decoration: none;
     padding: 10px 0;
+    &:hover{
+        color: $primary-400;
+    }
+    &.active{
+        background-color: $neutral-200;
+    }
 }
-.container-product-list main .main-menu .main-menu-item a:hover{
-    color: $primary-400;
-}
+
 
 @media(max-width: 767px){
     .container-product-list main .col-2{
@@ -81,12 +85,15 @@
     display: block;
     color: $neutral-900;
     padding: 10px;
-}
-.container-product-list main .content .pagination .pagination-chevron a:hover{
-    background-color: $neutral-100;
-}
-.container-product-list main .content .pagination .pagination-chevron a:focus{
-    background-color: $primary-300;
+    &:hover{
+        background-color: $neutral-100;
+    }
+    &:focus{
+        background-color: $primary-300;
+    }
+    &.active{
+        background-color: $neutral-200;
+    }
 }
 .container-product-list main .content .pagination .pagination-chevron a i{
     display: block;
@@ -106,11 +113,13 @@
 }
 .container-product-list main .content .pagination .pagination-more-pages a{
     color: $neutral-900;
-    /* padding: 8px 12.5px; */
-}
-.container-product-list main .content .pagination .pagination-more-pages a:hover{
-    background-color: $neutral-100;
-}
-.container-product-list main .content .pagination .pagination-more-pages a:focus{
-    background-color: $primary-300;
+    &:hover{
+        background-color: $neutral-100;
+    }
+    &:focus{
+        background-color: $primary-300;
+    }
+    &.active{
+        background-color: $neutral-200;
+    }
 }

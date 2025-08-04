@@ -3,9 +3,9 @@
     text-decoration: none;
     color: $neutral-600;
     font-weight: 500;
-}
-.container .breadcrumb a:hover{
-    color: $primary-400;
+    &:hover{
+        color: $primary-400;
+    }
 }
 .container .breadcrumb .breadcrumb-link{
     color: $neutral-600;

@@ -14,7 +14,7 @@
     <main class="mb-112 mb-md-40 row">
       <div class="mb-md-24 col-7">
         <ul class="d-flex gap-8 gap-md-0 product-detail-images">
-          <li class="image-display"><img src="../assets/images/desktop/image.png" alt="shoes-detail-image"></li>
+          <li><img src="../assets/images/desktop/image.png" alt="shoes-detail-image"></li>
           <li><img src="../assets/images/desktop/image-1.png" alt="shoes-detail-image"></li>
           <li><img src="../assets/images/desktop/image-2.png" alt="shoes-detail-image"></li>
           <li><img src="../assets/images/desktop/image-3.png" alt="shoes-detail-image"></li>
@@ -43,27 +43,28 @@
             <p class="mb-8">顏色</p>
             <ul class="d-flex color-wrap">
               <li class="mr-8 color-card">
-                <img src="../assets/images/desktop/product.png" alt="shoes-image">
-                <p>藍色</p>
+                <a href=""><img src="../assets/images/desktop/product.png" alt="shoes-image">
+                <p>藍色</p></a>
               </li>
               <li class="color-card">
-                <img src="../assets/images/desktop/product-1.png" alt="shoes-image">
-                <p>卡其色</p>
+                <a href="#"><img src="../assets/images/desktop/product-1.png" alt="shoes-image">
+                <p>卡其色</p></a>
+                
               </li>
             </ul>
           </section>
           <section class="mb-48 mb-md-24 size-section">
               <p class="mb-8">尺寸</p>
               <ul class="mb-8 d-flex size-wrap">
-                <li class="mr-8 mb-8 size-option">35(22.5cm)</li>
-                <li class="mr-8 mb-8 size-option">36(23.0cm)</li>
-                <li class="mr-8 mb-8 size-option">37(23.5cm)</li>
-                <li class="mr-8 mb-8 size-option">38(24.0cm)</li>
-                <li class="mr-8 mb-8 size-option">39(24.5cm)</li>
-                <li class="mr-8 mb-8 size-option">40(25.0cm)</li>
-                <li class="mr-8 size-option">41(26.0cm)</li>
-                <li class="mr-8 disabled size-option">42(26.5cm)</li>
-                <li class="mr-8 disabled size-option">43(27.0cm)</li>
+                <li class="mr-8 mb-8 size-option"><a href="#">35(22.5cm)</a></li>
+                <li class="mr-8 mb-8 size-option"><a href="#">36(23.0cm)</a></li>
+                <li class="mr-8 mb-8 size-option"><a href="#">37(23.5cm)</a></li>
+                <li class="mr-8 mb-8 size-option"><a href="">38(24.0cm)</a></li>
+                <li class="mr-8 mb-8 size-option"><a href="#">39(24.5cm)</a></li>
+                <li class="mr-8 mb-8 size-option"><a href="#">40(25.0cm)</a></li>
+                <li class="mr-8 size-option"><a href="#">41(26.0cm)</a></li>
+                <li class="mr-8 disabled size-option"><a href="#">42(26.5cm)</a></li>
+                <li class="mr-8 disabled size-option"><a href="#">43(27.0cm)</a></li>
               </ul>
               <p class="alert-text">僅剩 3 雙</p>
               <div class="product-actions"></div>
@@ -98,34 +99,38 @@
         </section>
       </div>
     </main>
-  <aside class="mb-88 mb-md-64 product-recommendation">
+    <aside class="py-48 recommendation">
       <h4 class="mb-16">你可能也喜歡...</h4>
-      <div class="swiper">
-          <ul class="d-flex swiper-wrapper">
-              <li class="swiper-slide"><a href="#">
-                  <img class="mb-12" src="../assets/images/desktop/product-2.png" alt="shoes-image">
-                  <h6 class="mb-4">VM001</h6>
-                  <p>NT$2,600</p>
-              </a></li>
-              <li class="swiper-slide"><a href="#">
-                  <img class="mb-12" src="../assets/images/desktop/product-3.png" alt="shoes-image">
-                  <h6 class="mb-4">Melty Kiss</h6>
-                  <p>NT$4,000</p>
-              </a></li>
-              <li class="swiper-slide"><a href="#">
-                  <img class="mb-12" src="../assets/images/desktop/product-4.png" alt="shoes-image">
-                  <h6 class="mb-4">BOOMBLOK</h6>
-                  <p>NT$3,200</p>
-              </a></li>
-              <li class="swiper-slide"><a href="#">
-                  <img class="mb-12" src="../assets/images/desktop/product-7.png" alt="shoes-image">
-                  <h6 class="mb-4">Sugar Snap</h6>
-                  <p>NT$3,200</p>
-              </a></li>
-          </ul>
-          <div class="swiper-button-prev"><i class="bi bi-chevron-left"></i></div>
-          <div class="swiper-button-next"><i class="bi bi-chevron-right"></i></div>
-      </div>
+      <ul class="row">
+        <li class="col-3 product-card">
+          <a href="#">
+            <img class="mb-12" src="/assets/images/desktop/product-2.png" alt="shoes-image">
+            <h6 class="mb-4">VM001</h6>
+            <p>NT$2,600</p>
+          </a>
+        </li>
+        <li class="col-3 product-card">
+          <a href="#">
+            <img class="mb-12" src="/assets/images/desktop/product-3.png" alt="shoes-image">
+            <h6 class="mb-4">Melty Kiss</h6>
+            <p>NT$4,000</p>
+          </a>
+        </li>
+        <li class="col-3 product-card">
+          <a href="#">
+            <img class="mb-12" src="/assets/images/desktop/product-4.png" alt="shoes-image">
+            <h6 class="mb-4">BOOMBLOK</h6>
+            <p>NT$3,200</p>
+          </a>
+        </li>
+        <li class="col-3 product-card">
+          <a href="#">
+            <img class="mb-12" src="/assets/images/desktop/product-7.png" alt="shoes-image">
+            <h6 class="mb-4">Sugar Snap</h6>
+            <p>NT$3,200</p>
+          </a>
+        </li>
+      </ul>
     </aside>
   </div>
 

@@ -12,8 +12,8 @@
 }
 .container-product-detail main .col-7,
 .container-product-detail main .col-5{
-    margin-left: 12px;
-    margin-right: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 .container-product-detail main .col-5{
     flex: 1;
@@ -22,19 +22,19 @@
     flex-wrap: wrap;
 }
 .container-product-detail main .product-detail-images li{
-    width: calc(50% - 4px);;
+    width: calc(50% - 4px);
 }
 .container-product-detail main .product-detail-images li img{
     width: 100%;
 }
 @media(max-width: 767px){
-    .container-product-detail main .product-detail-images li{
-        display: none;
-        width: 100%;
+    .container-product-detail main .product-detail-images{
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 12px;
     }
-    .container-product-detail main .product-detail-images .image-display{
-        display: block;
-        width: 100%;
+    .container-product-detail main .product-detail-images li{
+        min-width: 375px;
     }
     .container-product-detail main .col-5{
         width: 100%;
@@ -72,28 +72,33 @@
     font-weight: 500;
     text-align: center;
 }
-.container-product-detail main .content .color-section .color-wrap .color-card:hover{
-    border: 1px solid $neutral-600;
-}
-.container-product-detail main .content .color-section .color-wrap .color-card:focus{
-    border: 1px solid $neutral-900;
+.container-product-detail main .content .color-section .color-wrap .color-card a{
+    border-radius: 4px;
+
+    &:hover{
+        border: 1px solid $neutral-600;
+    }
+    &:focus{
+        border: 1px solid $neutral-900;
+    }
 }
 /* size-section */
 .container-product-detail main .content .size-section .size-wrap{
     flex-wrap: wrap;
 }
-.container-product-detail main .content .size-section .size-wrap .size-option{
+.container-product-detail main .content .size-section .size-wrap .size-option a{
+    display: block;
     width: fit-content;
     font-weight: 500;
     padding: 12px 24px;
     border:1px solid $neutral-300;
     border-radius: 4px;
-}
-.container-product-detail main .content .size-section .size-wrap .size-option:hover{
-    border:1px solid $neutral-600;
-}
-.container-product-detail main .content .size-section .size-wrap .size-option:focus{
-    border:1px solid $neutral-900;
+    &:hover{
+        border:1px solid $neutral-600;
+    }
+    &:focus{
+        border:1px solid $neutral-900;
+    }
 }
 .size-option.disabled{
     opacity: 0.5;
@@ -182,63 +187,36 @@
 .description-text{
     color: $neutral-600;
 }
-/* .product-recommendation */
-.container-product-detail .product-recommendation h4{
+/* recommendation */
+.recommendation .row{
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.recommendation h4{
     padding: 9.5px 0;
 }
-
-.container-product-detail .swiper-slide a{
+.recommendation .row .product-card{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.recommendation .row .product-card a{
     text-decoration: none;
     color: $neutral-900;
 }
-
-
-/* 輪播 */
-.swiper{
-    position: relative;
-}
-.swiper-button-prev::after,
-.swiper-button-next::after{
-    display: none;
-}
-.container-product-detail .product-recommendation .swiper-wrapper .swiper-slide{
-    width: 306px;
-}
-.container-product-detail .product-recommendation .swiper-wrapper .swiper-slide img{
+.recommendation .row .product-card a img{
     width: 100%;
 }
-.container-product-detail .swiper-slide{
-    overflow: hidden;
-}
-.container-product-detail .swiper-button-prev,
-.container-product-detail .swiper-button-next{
-    position: absolute;
-    width: 36px;
-    height: 36px;
-    background-color: #999999;
-    color: #fff;
-    border-radius: 50%;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 75%;
-    z-index: 10;
-
-}
-.container-product-detail .swiper-button-prev i,
-.container-product-detail .swiper-button-next i{
-    font-size: 14px;
-}
-.container-product-detail .swiper-button-prev:hover,
-.container-product-detail .swiper-button-next:hover{
-    background-color: #cccccc;
-}
-
 @media(max-width: 767px){
-    /* 輪播 */
-    /* .container-product-detail .product-recommendation .swiper-wrapper .swiper-slide img{
-    width: 300px;
-    height: 300px;
-    } */
+    .recommendation .row{
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        margin-left: -8px;
+        margin-right: -8px;
+
+        .col-3{
+            min-width: 300px;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+    }
 }
