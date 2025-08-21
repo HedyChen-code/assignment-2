@@ -2,6 +2,12 @@
     padding-left: 12px;
     padding-right: 12px;
 }
+@media(max-width: 376px){
+    .container-index{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
 
 .nav-link{
     display: none;
@@ -12,7 +18,6 @@
     }
     .nav-link a{
         display: block;
-        width: 50%;
         font-weight: 500;
         background-color: $primary-100;
         padding: 12px 0;
@@ -48,13 +53,20 @@
         padding-top: 155px;
         padding-bottom: 155px;
         padding-left: 12px;
-        padding-right: 12px;
+        padding-right:12px;
     }
     .banner-cta .display-1{
         font-size: 48px;
     }
     .banner-cta h3{
         font-size: 20px;
+    }
+}
+@media(max-width: 376px){
+    .banner-cta{
+        .display-1{
+            font-size: 36px;
+        }
     }
 }
 .container-index main .new-arrival .display-2, .container-index main .new-arrival h2{
